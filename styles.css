@@ -12,12 +12,13 @@ body {
 .container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     max-width: 400px;
-    width: 90%;
+    width: 95%;
+    margin: 1rem;
 }
 
 h1 {
@@ -97,4 +98,22 @@ button:disabled {
     font-size: 1.1rem;
     font-weight: 500;
     color: #6B7280;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 2rem 1.5rem;
+        border-radius: 15px;
+        margin: 1rem auto;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .timer {
+        font-size: 4rem;
+    }
+    
+    .controls button {
+        padding: 0.7rem 1.2rem;
+    }
 } 
